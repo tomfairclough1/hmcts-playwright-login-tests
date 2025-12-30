@@ -1,0 +1,29 @@
+{
+  "name": "hmcts-playwright-login-tests",
+  "version": "1.0.0",
+  "description": "## Overview",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:report": "npx playwright show-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomfairclough1/hmcts-playwright-login-tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomfairclough1/hmcts-playwright-login-tests/issues"
+  },
+  "homepage": "https://github.com/tomfairclough1/hmcts-playwright-login-tests#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.3",
+    "playwright": "^1.57.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
