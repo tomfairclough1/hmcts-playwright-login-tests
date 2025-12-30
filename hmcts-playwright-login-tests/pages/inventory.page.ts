@@ -20,9 +20,9 @@ export class InventoryPage {
     await this.logoutLink.click();
   }
 
-  async verifyLoaded() {
-  await expect(this.page).toHaveURL(/.*inventory.html/);
-  await expect(this.appLogo).toHaveText('Swag Labs');
-  await expect(this.inventoryContainer).toBeVisible();
-}
+ async isLoggedIn(expectedUrl: string | RegExp, expectedTitle: string) {
+    await expect(this.page).toHaveURL(expectedUrl);
+    await expect(this.appLogo).toHaveText(expectedTitle);
+    await expect(this.inventoryContainer).toBeVisible();
+  }
 }

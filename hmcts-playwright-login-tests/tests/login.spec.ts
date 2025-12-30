@@ -9,7 +9,7 @@ test.describe('Login Tests', () => {
       const user = testUsers.valid.standard;
 
       await loginPage.login(user.username, user.password);
-      await inventoryPage.verifyLoaded();
+      await inventoryPage.isLoggedIn(expectedResults.successUrl, expectedResults.appTitle);
 
     });
   });
