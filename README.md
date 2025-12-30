@@ -17,9 +17,9 @@ The solution is intentionally lightweight while remaining extensible for larger 
 
 ## Technology Stack
 
-- **Language:** TypeScript  
-- **Test Framework:** Playwright Test  
-- **Browser:** Chromium  
+- **Language:** TypeScript - https://www.typescriptlang.org/  
+- **Test Framework:** Playwright - https://playwright.dev/  
+- **Browser:** Default-Chrome (Cross Browser testing is configured) 
 - **Design Pattern:** Page Object Model (POM)  
 - **Reporting:** Playwright HTML Report  
 
@@ -89,7 +89,7 @@ npx playwright install
 
 ## Running the Tests
 
-### Run all tests in headless mode
+### Run tests in headless mode
 ```bash
 npm test
 ```
@@ -99,10 +99,16 @@ npm test
 npm run test:headed
 ```
 
+### Run specific test by name
+```bash
+npx playwright test -g "should login successfully" --project=chrome
+```
+
 ### View the HTML test report
 ```bash
 npm run test:report
 ```
+
 
 
 ## Design Decisions
