@@ -7,15 +7,13 @@ The framework automates the **login functionality** of a web application and dem
 
 - Test automation design
 - Web application testing
-- Page Object Model
-- Logging and reporting
-- Version control and maintainability
+- Page Object Model approach
 
 The solution is intentionally lightweight while remaining extensible for larger test suites.
 
 ---
 
-## Technology Stack
+## Tech Stack
 
 - **Language:** TypeScript - https://www.typescriptlang.org/  
 - **Test Framework:** Playwright - https://playwright.dev/  
