@@ -8,5 +8,5 @@
     "forceConsistentCasingInFileNames": true,
     "outDir": "dist"
   },
-  "include": ["tests/**/*.ts", "pages/**/*.ts", "utils/**/*.ts"]
+  "include": ["hmcts-playwright-login-tests/tests/**/*.ts", "hmcts-playwright-login-tests/pages/**/*.ts", "hmcts-playwright-login-tests/utils/**/*.ts"]
 }

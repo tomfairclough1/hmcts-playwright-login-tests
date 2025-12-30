@@ -6,10 +6,6 @@ export class LoginPage {
   readonly passwordInput: Locator;
   readonly loginButton: Locator;
   readonly errorMessage: Locator;
-  
-  // Success indicators
-  readonly inventoryContainer: Locator;
-  readonly appLogo: Locator;
 
   constructor(page: Page) {
     this.page = page;
@@ -17,10 +13,6 @@ export class LoginPage {
     this.passwordInput = page.locator('[data-test="password"]');
     this.loginButton = page.locator('[data-test="login-button"]');
     this.errorMessage = page.locator('[data-test="error"]');
-    
-    // Success indicators after login
-    this.inventoryContainer = page.locator('.inventory_container');
-    this.appLogo = page.locator('.app_logo');
   }
 
   async navigate() {
@@ -36,8 +28,5 @@ export class LoginPage {
   async getErrorMessage(): Promise<string> {
     return await this.errorMessage.textContent() || '';
   }
-
-  async isLoggedIn(): Promise<boolean> {
-    return await this.inventoryContainer.isVisible();
-  }
+  
 }

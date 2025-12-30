@@ -101,7 +101,7 @@ npm run test:headed
 
 ### View the HTML test report
 ```bash
-npm run report
+npm run test:report
 ```
 
 

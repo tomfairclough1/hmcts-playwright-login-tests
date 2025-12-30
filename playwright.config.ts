@@ -1,7 +1,11 @@
 import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
-  testDir: './tests',
+  testDir: './hmcts-playwright-login-tests/tests',
+  reporter: [
+    ['html', { open: 'never' }],
+    ['list']
+  ],
   timeout: 30000,
   retries: 1,
   use: {
