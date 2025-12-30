@@ -107,9 +107,9 @@ npm run report
 
 ## Design Decisions
 
-- Playwright was chosen for its reliability, built-in waits, and modern web testing capabilities.
+- Playwright: Reliability, built-in waits, and modern web testing capabilities.
 
-- Page Object Model is used to separate test logic from UI interactions, improving maintainability.
+- Page Object Model: Separate test logic from UI interactions, improving maintainability.
 
 - Centralised test data allows easy extension of test scenarios.
 
